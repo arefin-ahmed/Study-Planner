@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📚 Study Planner</h1>
+      <p class="subtitle">Plan your day — quick, simple, focused.</p>
+    </header>
+
+    <form id="taskForm" class="task-form" onsubmit="addTask(event)">
+      <input type="text" id="taskInput" placeholder="Enter your task" aria-label="Task description" />
+      <button id="addBtn" type="submit">Add Task</button>
+    </form>
+
+    <ul id="taskList" class="task-list" aria-live="polite"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
